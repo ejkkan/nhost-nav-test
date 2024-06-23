@@ -61,9 +61,14 @@ const NavigateComponent2: React.FC = () => {
   };
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col justify-center items-center'>
       <h1>{user?.email}</h1>
-      <button onClick={handleNavigation}>Go to Route 1</button>
+      <button onClick={handleNavigation}>
+        Go to Route 2 with router(does not work)
+      </button>
+      <div>
+        <a href='/route2'>Go to Route 2 with a-tag(works)</a>
+      </div>
       <button onClick={handleCreateUser}>Create User</button>
       <button onClick={handleLoginUser}>Login User</button>
       <button onClick={handleLogoutUser}>Logout User</button>

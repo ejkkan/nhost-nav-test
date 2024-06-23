@@ -15,7 +15,7 @@ const NavigateComponent2: React.FC = () => {
   };
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col justify-center items-center'>
       <h1>{user?.email}</h1>
       <button onClick={handleNavigation}>Go to home</button>
     </div>
